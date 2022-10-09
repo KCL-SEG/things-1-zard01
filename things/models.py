@@ -1,3 +1,7 @@
+from django.core.validators import RegexValidator
 from django.db import models
 
-# Create your models here.
+class Thing():
+    name =models.CharField(max_length=15)
+    description=models.CharField()
+    quantity = models.IntegerField()
